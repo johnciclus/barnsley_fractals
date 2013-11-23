@@ -1,0 +1,1025 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="borderPainted" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="JPopupMenu.setDefaultLightWeightPopupEnabled(false);"/>
+      </AuxValues>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Archivo"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileMenuActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNuevoFrac">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nuevo Fractal"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemNuevoFracActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNuevoGrama">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nueva Gramatica"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemNuevoGramaActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparatorMenu">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAbrir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Fractal"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAbrirGrama">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Gramatica"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparatorArchivo">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuIGuardar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar Fractal"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGuardarComo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar Fractal Como..."/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuIGuardarGrama">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar Gramatica"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGuardarComoGrama">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar Gramatica Como..."/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparatorArchivoSeg">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSalir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Salir de Barnsley Fractals"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemSalirActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuOrigenDatos">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Origen de datos"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSelecGrama">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Seleccionar Gramatica"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemSelecGramaActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuHerra">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Herramientas"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemExport">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exportar Imagen"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemExportActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTransVar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Emular Transformaciones variables"/>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="jMenuModoPant">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Modo Pantalla"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItemPantalla">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pantalla Completa"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItemVentana">
+                  <Properties>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="Ventana de ejecuci&#xf3;n"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ayuda"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemHelp">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ayuda Contenidos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemHelpActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="jMenuAyudaRap">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ayuda Rapida"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAppFrac">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Aplicaciones de los Fractales"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAvanCien">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Avances Cientificos"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFuncUsos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Funciones y usos de Barnsley Fractals"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemManBas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Manejo basico"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemQueFrac">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Que es un Fractal"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemDesc">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descripcion de Barnsley Fractals"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparatorAyuda">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEnlaceWeb">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enlace Web"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAcerca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Acerca de."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemAcercaActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="statusPane" alignment="1" max="32767" attributes="0"/>
+          <Component id="jSplitPanePrincipal2D" alignment="0" pref="861" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jSplitPanePrincipal2D" pref="553" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="statusPane" min="-2" pref="20" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JSplitPane" name="jSplitPanePrincipal2D">
+      <Properties>
+        <Property name="dividerLocation" type="int" value="640"/>
+      </Properties>
+      <Events>
+        <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jSplitPanePrincipal2DJSplitPaneExt_Resized"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="BarnsForm_jSplitPanePrincipal2D"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanelHerr">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+              <JSplitPaneConstraints position="right"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparatorOpc3" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jLbTitOri" alignment="0" min="-2" max="-2" attributes="1"/>
+                  <Component id="jCheckBoxPro" alignment="0" min="-2" max="-2" attributes="1"/>
+                  <Component id="jLbSelFrac" alignment="0" min="-2" max="-2" attributes="1"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jLbZoom" alignment="0" max="32767" attributes="1"/>
+                          <Component id="jLbCenCoord" alignment="0" max="32767" attributes="1"/>
+                          <Component id="jLbColFon" alignment="0" min="-2" max="-2" attributes="1"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="1">
+                              <Component id="jLbMen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSliderZoom" pref="96" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLbMas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jBtnColFon" alignment="0" pref="134" max="32767" attributes="1"/>
+                          <Component id="jTogButVerEjes" alignment="0" pref="134" max="32767" attributes="1"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jCheckBoxColDeg" min="-2" max="-2" attributes="1"/>
+                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jLbTitVisu" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLbTitEdi" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jRadBtnCar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jRadBtnGeo" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSeparatorOpc6" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jSeparatorOpc4" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jSeparatorOcp2" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jSeparatorOpc1" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLbIter" alignment="0" min="-2" pref="81" max="-2" attributes="1"/>
+                          <Component id="jLbRest" alignment="0" min="-2" max="-2" attributes="1"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jSpinnerIter" pref="107" max="32767" attributes="1"/>
+                          <Component id="jBtnRest" alignment="0" max="32767" attributes="1"/>
+                      </Group>
+                  </Group>
+                  <Component id="jScrollPaneListFract" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLbTitEdi1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="47" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jSeparatorOpc5" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jSeparatorOpc7" alignment="0" pref="221" max="32767" attributes="1"/>
+                  <Component id="jSplitPaneGrama" alignment="0" pref="221" max="32767" attributes="1"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLbTitOri" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLbSelFrac" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPaneListFract" min="-2" pref="81" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbIter" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinnerIter" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbRest" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnRest" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jCheckBoxPro" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOcp2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLbTitVisu" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbCenCoord" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTogButVerEjes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbColFon" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnColFon" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLbZoom" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLbMen" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jSliderZoom" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jCheckBoxColDeg" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLbMas" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLbTitEdi" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jRadBtnCar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jRadBtnGeo" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc5" min="-2" pref="2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLbTitEdi1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Component id="jSeparatorOpc7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSplitPaneGrama" pref="61" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JToggleButton" name="jTogButVerEjes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ver Ejes"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTogButVerEjes_ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JSlider" name="jSliderZoom">
+              <Properties>
+                <Property name="value" type="int" value="25"/>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSliderZoom_state"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="BarnsForm_jSliderZoom"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbZoom">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Zoom"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMen">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="+"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbColFon">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Color Fondo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCenCoord">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cent. Coord"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTitVisu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Opciones de visualizaci&#xf3;n  "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jBtnColFon">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Color Plano"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnColFonActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="//jBtnColFon.setBackground(colFon);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTitOri">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Opciones de origen de datos  "/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPaneListFract">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="jListFrac">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="selectionMode" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="jListFracValueChanged"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSpinner" name="jSpinnerIter">
+              <Properties>
+                <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                  <SpinnerModel initial="0" maximum="500000" minimum="0" numberType="java.lang.Integer" stepSize="5000" type="number"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSpinnerIterjSpinnerStateChanged"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSelFrac">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Seleccion de fractal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbIter">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Iteracciones"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxPro">
+              <Properties>
+                <Property name="label" type="java.lang.String" value="Probabilidad automatica"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxProActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc1">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc3">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOcp2">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxColDeg">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Color degrade"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxColDegActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc4">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTitEdi">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Opciones de edici&#xf3;n fractal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc6">
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="jRadBtnCar">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Edici&#xf3;n Cartesiana"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="jRadBtnGeo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Edici&#xf3;n Geometrica"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JSplitPane" name="jSplitPaneGrama">
+              <Properties>
+                <Property name="dividerLocation" type="int" value="25"/>
+                <Property name="orientation" type="int" value="0"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPaneGrama">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                      <JSplitPaneConstraints position="bottom"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanelGramatical">
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="425" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="331" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanelConGrama">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                      <JSplitPaneConstraints position="left"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jSpinnerGrama" min="-2" pref="39" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                              <Component id="jSliderGrama" pref="92" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jBtnCarGramatica" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jSpinnerGrama" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnCarGramatica" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jSliderGrama" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JSpinner" name="jSpinnerGrama">
+                      <Properties>
+                        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                          <SpinnerModel initial="0" maximum="26" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSpinnerGramaStateChanged"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JSlider" name="jSliderGrama">
+                      <Properties>
+                        <Property name="maximum" type="int" value="26"/>
+                        <Property name="value" type="int" value="0"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSliderGramaStateChanged"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jBtnCarGramatica">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cargar Gra."/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnCarGramaticaActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLbRest">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Restaurar datos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jBtnRest">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reiniciar fractal"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnRestActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="//jBtnColFon.setBackground(colFon);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc5">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTitEdi1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Control Gramatical del Caos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorOpc7">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JTabbedPane" name="jTabbedPane">
+          <Properties>
+            <Property name="tabLayoutPolicy" type="int" value="1"/>
+          </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jTabbedPaneStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="//jTabbedPane2D.putClientProperty(SubstanceLookAndFeel.WATERMARK_VISIBLE, false);&#xd;&#xa;//repaint();"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+              <JSplitPaneConstraints position="left"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JSplitPane" name="jSplitPaneSecundario2D">
+              <Properties>
+                <Property name="dividerLocation" type="int" value="480"/>
+                <Property name="orientation" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jSplitPaneSecundario2DJSplitPaneInt2D_Resized"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jSplitPaneSecundario2D.setLeftComponent(canvas2D);&#xd;&#xa;"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Visualizacion 2D">
+                    <Property name="tabTitle" type="java.lang.String" value="Visualizacion 2D"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JSplitPane" name="jSplitPaneTrans2D">
+                  <Properties>
+                    <Property name="dividerLocation" type="int" value="70"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                      <JSplitPaneConstraints position="right"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPaneHerr2D">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[640, 480]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="right"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanelTrans2D">
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="554" max="32767" attributes="0"/>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="510" max="32767" attributes="0"/>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="jPanelCantTrans2D">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="left"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jSpinnerCantTrans2D" alignment="1" max="32767" attributes="1"/>
+                                      <Component id="jLbTitTran2D" alignment="1" max="32767" attributes="1"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSliderCantTrans2D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLbTitTran2D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSpinnerCantTrans2D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jSliderCantTrans2D" alignment="0" pref="53" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JSpinner" name="jSpinnerCantTrans2D">
+                          <Properties>
+                            <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                              <SpinnerModel initial="0" maximum="26" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                            </Property>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[40, 20]"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSpinnerCantTrans2DjSpinnerCantStateChanged"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JSlider" name="jSliderCantTrans2D">
+                          <Properties>
+                            <Property name="maximum" type="int" value="0"/>
+                            <Property name="minimum" type="int" value="-26"/>
+                            <Property name="orientation" type="int" value="1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSliderCantTrans2DjSliderCantStateChanged"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLbTitTran2D">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Trans."/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JSplitPane" name="jSplitPaneSecundario3D">
+              <Properties>
+                <Property name="dividerLocation" type="int" value="480"/>
+                <Property name="orientation" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jSplitPaneSecundario3DjSplitPaneInt3D_Resized"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jSplitPaneSecundario3D.setLeftComponent(canvas3D);&#xd;&#xa;"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Visualizacion 3D">
+                    <Property name="tabTitle" type="java.lang.String" value="Visualizacion 3D"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JSplitPane" name="jSplitPaneTrans3D">
+                  <Properties>
+                    <Property name="dividerLocation" type="int" value="70"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                      <JSplitPaneConstraints position="right"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="jPanelCantTrans3D">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="left"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jSpinnerCantTrans3D" alignment="1" max="32767" attributes="1"/>
+                                      <Component id="jLbTitTran3D" alignment="1" max="32767" attributes="1"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSliderCantTrans3D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLbTitTran3D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSpinnerCantTrans3D" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jSliderCantTrans3D" alignment="0" pref="53" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JSpinner" name="jSpinnerCantTrans3D">
+                          <Properties>
+                            <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+                              <SpinnerModel initial="0" maximum="26" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                            </Property>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[40, 20]"/>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSpinnerCantTrans3DStateChanged"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JSlider" name="jSliderCantTrans3D">
+                          <Properties>
+                            <Property name="maximum" type="int" value="0"/>
+                            <Property name="minimum" type="int" value="-26"/>
+                            <Property name="orientation" type="int" value="1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSliderCantTrans3DStateChanged"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLbTitTran3D">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Trans."/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPaneHerr3D">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[640, 480]"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="right"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="jPanelTrans3D">
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="550" max="32767" attributes="0"/>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="450" max="32767" attributes="0"/>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="statusPane">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="470" max="32767" attributes="0"/>
+                  <Component id="jSeparatorVert1" min="-2" pref="7" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLbPlano" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jSeparatorVert" min="-2" pref="7" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  <Component id="progressBar" min="-2" pref="110" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="progressBar" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jSeparatorVert" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLbPlano" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jSeparatorVert1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JProgressBar" name="progressBar">
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparatorVert">
+          <Properties>
+            <Property name="orientation" type="int" value="1"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[25, 25]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLbPlano">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Coord Plano: x=[0.0] y=[-1.0] z=[-4.0]"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparatorVert1">
+          <Properties>
+            <Property name="orientation" type="int" value="1"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[25, 25]"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

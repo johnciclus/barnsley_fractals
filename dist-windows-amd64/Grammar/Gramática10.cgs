@@ -1,0 +1,5 @@
+4	4
+daSbc[0,1]|daScb[0,1]|dcSba[0,1]|dcSab[0,1]|dbScd[0,1]|dbSac[0,1]|A[0,4]
+caSbd[0,1]|caSdb[0,1]|cbSad[0,1]|cbSda[0,1]|cdSab[0,1]|cdSba[0,1]|B[0,4]
+baScd[0,1]|bcSda[0,1]|bdSac[0,1]|baSdc[0,1]|bcSad[0,1]|bdSca[0,1]|C[0,4]
+abScd[0,1]|abSdc[0,1]|acSbd[0,1]|acSdb[0,1]|adSbc[0,1]|adScb[0,1]|S[0,4]
